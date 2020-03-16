@@ -1,0 +1,20 @@
+{
+  "name": "eq2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "mochawesome": "^5.0.0",
+    "moment": "^2.24.0",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
