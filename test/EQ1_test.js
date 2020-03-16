@@ -29,7 +29,7 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
     done();
   });
 
-  it("should validate the kind key value", done => {
+  it("Validates the value of the 'kind' key", done => {
     api
       .get(validKey)
       .set("Accept", "application/json")
@@ -40,7 +40,7 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
     done();
   });
 
-  it("should validate that all keys are returned for each item in the elections list", done => {
+  it("Validates that all keys are returned for each item in the elections list", done => {
     api
       .get(validKey)
       .set("Accept", "application/json")
@@ -60,7 +60,7 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
       });
   });
 
-  it("should validate the values of the first election returned", done => {
+  it("Validate the values of the first election item returned", done => {
     api
       .get(validKey)
       .set("Accept", "application/json")
@@ -76,9 +76,8 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
     done();
   });
 
-  it("validates the election dates are in the correct format", done => {
+  it("Validates the election dates are in the correct format", done => {
     var dateFormat = "YYYY-MM-DD";
-
     api
       .get(validKey)
       .set("Accept", "applicaiton/json")
@@ -92,7 +91,7 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
     done();
   });
 
-  it("Validates that 5 elections are returned", done => {
+  it("Validates that 5 election items are returned", done => {
     api
       .get(validKey)
       .set("Accept", "application/json")
@@ -116,7 +115,7 @@ describe("Validate the Google Civic API Election Query Endpoint", function() {
     done();
   });
 
-  it("Validates that access is not granted to user with null key", done => {
+  it("Validates that access is not granted with null key", done => {
     var nullKey = "?key=";
     api
       .get(nullKey)
